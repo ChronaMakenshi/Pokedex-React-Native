@@ -8,7 +8,7 @@ interface ImagedePokemonProps {
 }
 
 const ImagedePokemon: React.FC<ImagedePokemonProps> = ({ title, imagesToDisplay }) => {
-    // État pour gérer les erreurs d'image
+
     const [imageError, setImageError] = useState<{ [key: string]: boolean }>({});
 
     const handleImageError = (uri: string) => {
@@ -26,16 +26,18 @@ const ImagedePokemon: React.FC<ImagedePokemonProps> = ({ title, imagesToDisplay 
                     style={styles.pokemonImageAxe}
                 />
             )}
-            <View style={styles.imageContainerGenre}>
-                {imagesToDisplay.map((image, index) => (
-                    <Image
-                        key={index}
-                        source={image.uri}
-                        style={styles.pokemonImageGenre}
-                        onError={() => handleImageError(image.uri)}
-                    />
-                ))}
-            </View>
+            {imagesToDisplay.length > 0 && (
+                <View style={styles.imageContainerGenre}>
+                    {imagesToDisplay.map((image, index) => (
+                        <Image
+                            key={index}
+                            source={{ uri: image.uri }}
+                            style={styles.pokemonImageGenre}
+                            onError={() => handleImageError(image.uri)}
+                        />
+                    ))}
+                </View>
+            )}
         </View>
     );
 };
