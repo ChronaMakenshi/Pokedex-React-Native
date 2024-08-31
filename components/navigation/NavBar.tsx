@@ -63,7 +63,7 @@ const NavBar: React.FC<NavBarProps> = ({ setSearchQuery, filterByType }) => {
                 onRequestClose={toggleModal}
             >
                 <View>
-                    <View style={styles.modalView}>
+                    <View style={styles.modalView} >
                         <TouchableOpacity accessible={true}>
                             <Text style={styles.modalText}>Types</Text>
                             <View style={styles.containerTypes}>
@@ -185,10 +185,12 @@ const styles = StyleSheet.create({
         height: 48,
     },
     modalView: {
-        width: 250,
-        backgroundColor: 'transparent',
-        paddingTop: 50,
+        width: 400,
+        paddingHorizontal: 70,
+        paddingVertical: 20,
         margin: 'auto',
+        backgroundColor: 'rgba(51, 51, 51, 0.5)',
+        borderRadius: 10,
     },
     modalText: {
         color: '#f5f5f5',
