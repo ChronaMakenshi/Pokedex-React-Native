@@ -27,6 +27,7 @@ import ErrorScreen from '@/components/ErrorScreen';
 import NoDataScreen from '@/components/NoDataScreen';
 import {asexual, femaleOnly, maleOnly, typeColors, typeImages, versionImages} from '@/constants/pokemonData';
 import flecheG from '@/assets/images/iconsgauche48.png';
+import axeImage from '@/assets/images/axe.png';
 
 
 const PokemonDetail: React.FC = () => {

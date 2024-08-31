@@ -30,7 +30,7 @@ const ImagedePokemon: React.FC<ImagedePokemonProps> = ({ title, imagesToDisplay 
                 {imagesToDisplay.map((image, index) => (
                     <Image
                         key={index}
-                        source={imageError[image.uri] ? axeImage : { uri: image.uri }}
+                        source={image.uri}
                         style={styles.pokemonImageGenre}
                         onError={() => handleImageError(image.uri)}
                     />
