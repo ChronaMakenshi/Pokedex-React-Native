@@ -54,5 +54,4 @@ Rejoignez notre communauté de développeurs créant des applications universell
 
 - [Expo sur GitHub](https://github.com/expo/expo): Découvrez notre plateforme open source et contribuez.
 - [Communauté Discord](https://chat.expo.dev): Discutez avec les utilisateurs d'Expo et posez des questions.
-# Pokedex-React-Native
-# Pokedex-React-Native
+
