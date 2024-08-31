@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Pokedex",
+    "slug": "Pokedex",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/pngwing.com.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/pngwing.com.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#EE3E41"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/pngwing.com.png",
+        "backgroundColor": "#EE3E41"
+      },
+      "package": "com.chrona24000.Pokedex"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/pngwing.com.png"
+    },
+    "description": "Pokedex est une encyclopédie complète des Pokémon qui fournit des informations détaillées sur tous les Pokémon connus, y compris leurs types, statistiques, évolutions et plus encore. Conçu avec une interface conviviale pour une navigation facile et un accès rapide aux données des Pokémon.",
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "90b50744-1b52-484d-ba3f-d66ee5fc44ab"
+      }
+    }
+  }
+}
