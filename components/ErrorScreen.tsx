@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 
 interface ErrorScreenProps {
     error: string;
-    onRetry?: () => void;  // Fonction de rappel pour réessayer, si nécessaire
+    onRetry?: () => void; 
 }
 
 const ErrorScreen: React.FC<ErrorScreenProps> = ({ error, onRetry }) => {
